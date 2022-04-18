@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="product_stylee.css">
+    <title>Produkt</title>
+</head>
+<body>
+    <header class="header">
+
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="">
+    </a>
+
+    <nav class="navbar" style="margin:auto;">
+        <a href="../index.php#home">Domů</a>
+        <a href="../index.php#about">O nás</a>
+        <a href="../index.php#products">Produkty</a>
+       
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+       <a href="../register/login.php"> <div class="fas fa-user" id="login-btn"></div>
+</a>
+
+</div> 
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="Hledat">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <!-- <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="../images/cart-item-1.png" alt="">
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">100Kč/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="../images/cart-item-2.png" alt="">
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">100Kč/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="../images/cart-item-3.png" alt="">
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">100Kč/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="../images/cart-item-4.png" alt="">
+            <div class="content">
+                <h3>cart item 04</h3>
+                <div class="price">100Kč/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+ -->
+</header>
+  <div class="card-product">    
+    <div class="share">
+        <h3><span class="fa fa-twitter"></span></h3>
+        <h3><span class="fa fa-facebook"></span></h3>
+        <h3><span class="fa fa-google-plus"></span></h3>
+        <h3><span class="fa fa-send"></span></h3>
+    </div>  
+    <div class="img-product">            
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <div class="number-text">1 / 4</div>
+                <img class= "img">
+            </div>
+            <div class="slides fade">
+                <div class="number-text">2 / 4</div>
+                <img src="https://cdn.shopify.com/s/files/1/0801/9439/products/Kalita_155_side_top_59a8c7ac-f06b-4e11-8d4f-a208766c628f_800x.JPG?v=1450322699" style="width:100%">
+            </div>
+            <div class="slides fade">
+                <div class="number-text">3 / 4</div>
+                <img src="https://cdn.shopify.com/s/files/1/0801/9439/products/Kalita_Wave_Kettle_Dripper_8fbc0e94-d55d-4e5f-a3fe-f69ee86fcc1f_800x.JPG?v=1450322703" style="width:100%">
+            </div>
+            <div class="slides fade">
+                    <div class="number-text">4 / 4</div>
+                    <img src="https://cdn.shopify.com/s/files/1/0801/9439/products/DSC07739_ee31c8c1-3b19-41d6-8914-397bd824dd41_800x.JPG?v=1450322701" style="width:100%">
+            </div>                            
+        </div>
+        <br /> 
+        <div class="container-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+    </div>      
+    <div class="data-product">
+        <h2 class="nadpis"></h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h3 class="cena">KČ</h3>
+        <div class="tab">
+            <button class="tablinks" onclick="openData(event, 'description')" id="defaultOpen">Detail</button>
+            <button class="tablinks" onclick="openData(event, 'details')">Doplňkové parametry</button>
+        </div>
+        <div id="description" class="tabcontent">
+            <p class="popis">
+                </p>
+        </div>
+
+        <div id="details" class="tabcontent">
+        <p class="odruda_nazev">              <br />
+        <p class="pouziti_nazev">             <br />
+        <p class="prazirna_nazev">            <br />
+        <p class="region_nazev">              <br />
+        
+        <p class="stupenPrazeni_nazev">       <br />
+        <p class="zemePuvodu_nazev">          <br />
+        <p class="zpusobZpracovani_nazev">    <br />
+        </p> 
+        </div>
+        <br />
+        <div class="cart">
+            Qty: &nbsp;
+            <input type="number" placeholder="1" maxlength="3">&nbsp; &nbsp; &nbsp;
+            <button class="btn-add-cart"><span class="fa fa-shopping-cart" data-name="Banana" data-price="1.22"></span>&nbsp; Add to Cart </button>
+        </div>
+    </div>  
+</div>
+<div>
+
+
+  <section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#home">domů</a>
+        <a href="#about">o nás</a>
+        <a href="#products">produkty</a>
+        <a href="#contact">Kontakt</a>
+    </div>
+
+    
+</section>
+
+</div>
+
+
+<script src="../js/Components/product.js"></script>
+<script src="../js/products.js"></script>
+<script src="../js/scriptProduct.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/cart.js"></script>
+</body>
+</html>
